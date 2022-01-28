@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    top: 0;
+    display: flex;
+    padding: 20px 10px;
+}
+.nav-item{  
+    height: 100%;
+    width: 80px;
+}
+.brand-logo{
+    width: 100%;
+    height: 25px;
+}
+
+.form-container{
+    padding: 0 5%;
+}
+h1{
+    margin-bottom: 28px;
+}
+.email-form-container{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 17px;
+}
+.email{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 20px 0px;
+    
+}
+.email:focus + .email-label{
+    top: 0.25rem;
+    font-size: 12px;
+}
+.email:not(:placeholder-shown).email:not(:focus) + .email-label{
+    top: 0.25rem;
+    font-size: 12px;
+}
+.email-label{
+    position: absolute;
+    left: 5.5%;
+    top: 32%;
+    color: #8c8c8c;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.email:focus{
+    outline: none;
+}
+.pass-form-container{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.password{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 20px 0px;
+}
+.password:focus + .pass-label{
+    top: 0.25rem;
+    font-size: 12px;
+}
+.password:not(:placeholder-shown).password:not(:focus) + .pass-label{
+    top: 0.25rem;
+    font-size: 12px;
+}
+.password:focus{
+    outline: none;
+}
+.pass-label{
+    position: absolute;
+    left: 5.5%;
+    top: 32%;
+    color: #8c8c8c;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.form-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-bottom{
+    display: flex;
+    margin-top: 13px;
+    gap: 47%;
+}
+.form-bottom-1{
+    display: flex;
+    
+}
+.form-bottom-1-2{
+    width: 100%;
+}
+
+#remember{
+    height: 15px;
+    width: 15px; 
+}
+.remember{
+    font-size: 13px;
+    color: #b3b3b3;
+    padding-left: 4px;
+    padding-top: 1px;
+}
+.form-buttom-2>p{
+    font-size: 13px;
+    color: #b3b3b3;
+}
+.fb-content{
+    margin-top: 30px;
+    display: flex;
+}
+.fb-img{
+    height: 20px;
+    width: 20px;
+}
+.fb-para>p{
+    display: inline;
+    color: #737373;
+    font-size: 13px;
+    padding-left: 10px;   
+}
+.hybrid-form{
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
+.hybrid-form>span{
+    font-size: 16px;
+}
+.hf-1{
+    color: #737373;
+}
+.hybrid-form>p{
+    padding-top: 15px;
+    font-size: 13px;
+    color: #8C8C8C;
+}
+.hybrid-form>p>span{
+    color: #0071eb ;
+}
+.side-footer-wrapper{
+    padding-bottom: 25px;
+}
+.footer-divider{
+    height: 0;
+    width: 100%;
+    border-top: 2px solid #4e4e4e;
+}
+
+.footer-container{
+    margin: 0px 18px;
+    padding: 30px 0px;
+}
+.footer-row-1{
+    font-size: 16px;
+    color: #757575;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer-row-2{
+    font-size: 13px;
+    color: #757575;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.column-1>p{
+    margin-bottom: 16px;
+    padding-right: 50px;
+}
+.column-2>p{
+    margin-bottom: 16px;
+}
+.column-3>p{
+    padding-right: 89px;
+}
+.dropdown-container{
+    border: 0.7px solid #aaa;
+    padding: 0.3rem 0.4rem;
+    border-radius: 1px; 
+}
+.op-2,.op-1{
+    background-color: black;
+    color: #757575;
+}
+.footer-row-3{
+    margin-top: 35px;
+}
+.footer-row-3 > .dropdown-container{
+    width: fit-content;
+    border: 1px solid #757575;
+    margin-top: 20px;
+    height: 47px;
+    padding: 13px 10px 0px 10px ;
+}
+.footer-row-3 > .dropdown-container>.language-dropdwn{
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.language-dropdwn:focus{
+    outline: none;
+}
+select{
+    color: #757575;
+    
+}
+.fas{
+    color: #757575;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    body{
+        background-image: linear-gradient( to top, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.7) 10% ), url(https://assets.nflxext.com/ffe/siteui/vlv3/8f3e38a9-1c2c-4818-99b5-2d9bdff9ad1d/96d29058-fe9b-4f8e-aa49-4c7af385934b/IN-en-20220124-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        background-color: rgba(0, 0, 0, 0.5); 
+        box-shadow: 0px 8px 17px black inset;
+    }
+    .navbar{
+        padding: 20px 20px;
+        z-index: 10;
+    }
+    .nav-item{  
+        height: 100%;
+        width: 175px;
+    }
+    .brand-logo{
+        width: 100%;
+        height: 55px;
+    }
+    .form-container{
+        background-color: rgba(0,0,0,0.815);
+        margin-left: 21%;
+        width: 60%;
+        padding: 0;
+        margin-bottom: 90px;
+    }
+    .form-inner-container{
+        padding: 60px 68px 40px 68px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .email-label,.pass-label{
+        font-size: 16px;
+    }
+    .email,.password{
+        font-size: 18px;
+    }   
+    .fb-content{
+        margin-top: 55px;
+    }
+    .hybrid-form{
+        margin-top: 15px;
+    }
+    .footer-divider{
+        border-top: none;
+    }
+    .side-footer-wrapper{
+        background-color: rgba(0,0,0,0.815);
+    }
+    .footer-container{
+        margin: 0px 38.4062px;
+        padding: 30px 0px;
+    }
+    .side-footer-wrapper{
+        padding-bottom: 0px;
+    }
+    .dropdown-container{
+        background-color: #000000;
+    }
+    .column-2>p{
+        padding-right: 50px;
+    }
+    .column-3>p{
+        padding-right: 100px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    
+    .navbar{
+        padding: 20px 35px;
+        z-index: 10;
+    }
+    .form-container{
+        width: 34%;
+        margin-left: 34%;
+        border-radius: 5px;
+    }
+    .email,.password{
+        font-weight: 200;
+    }
+    .email:focus + .email-label{
+        top: 0.25rem;
+        font-size: 11px;
+    }
+    .email:not(:placeholder-shown).email:not(:focus) + .email-label{
+        top: 0.25rem;
+        font-size: 11px;
+    }
+    .password:focus + .pass-label{
+        top: 0.25rem;
+        font-size: 11px;
+    }
+    .password:not(:placeholder-shown).password:not(:focus) + .pass-label{
+        top: 0.25rem;
+        font-size: 11px;
+    }
+    .password:focus,.email:focus{
+        background-color: rgb(71, 71, 71);
+    }
+    #remember{
+        width: 18px;
+        height: 20px;
+    }
+    .remember{
+        padding-top: 2px;
+    }
+    .form-buttom-2{
+        padding-top: 2px;
+    }
+    /* .form-bottom-1-2{
+        width: 200%;
+    } */
+    .form-bottom{
+        gap: 45.5%;
+    }
+
+    .footer-container{
+        margin: 0px 180px;
+        padding: 30px 0px;
+    }
+    .column-1>p{
+        padding-right: 140px;
+    }
+     .column-2>p{
+        padding-right: 120px;
+    }
+    .column-3>p{
+        padding-right: 180px;
+    } 
+    .footer-row-3{
+        margin-top: 20px;
+        padding-bottom: 17px;
+    }
+
+    
+}
